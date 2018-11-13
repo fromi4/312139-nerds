@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Роман](https://up.htmlacademy.ru/htmlcss/23/user/312139).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Мальнев](https://htmlacademy.ru/profile/fuckomako).
 
 ---
 
