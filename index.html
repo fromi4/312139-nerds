@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <title>Дизайн-студия "Нёрдс"</title>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-navigation">
+                <a class="main-header-logo">
+                    <img src="http://placehold.it/150x100" width="60" height="30" alt="Логотип дизайн-студии «Нёрдс»">
+                </a>
+                <ul class="site-navigation">
+                    <li><a href="studio.html">Студия</a></li>
+                    <li><a href="clients.html">Клиенты</a></li>
+                    <li><a href="catalog.html">Магазин</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+                <ul class="basket-navigation">
+                    <li class="basket-link"><a href="basket.html">Корзина</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container">
+            <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
+            <section class="services">
+                <h2 class="visually-hidden">Услуги</h2>
+                <ul class="services-list">
+                    <li class="service-item">
+                        <h3>ВЕБ-САЙТЫ</h3>
+                        <img src="http://placehold.it/150x100" width="60" height="30" alt="Картинка ВЕБ-САЙТЫ">
+                        <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+                        <a class="button-web" href="web.html">Заказать</a>
+                    </li>
+                    <li class="service-item">
+                        <h3>ПРИЛОЖЕНИЯ</h3>
+                        <img src="http://placehold.it/150x100" width="60" height="30" alt="Картинка приложения">
+                        <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+                        <a class="button-applications" href="applications.html">Заказать</a>
+                    </li>
+                    <li class="service-item">
+                        <h3>ПРЕЗЕНТАЦИИ</h3>
+                        <img src="http://placehold.it/150x100" width="60" height="30" alt="Картинка презентации">
+                        <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+                        <a class="button-presentations" href="presentations.html">Заказать</a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <div class="footer-social">
+                <ul>
+                    <li><a class="social-button" href="#">Вконтакте</a></li>
+                    <li><a class="social-button" href="#">Фейсбук</a></li>
+                    <li><a class="social-button" href="#">Инстаграм</a></li>
+                </ul>
+                <span class="social-slogan">Давайте дружить, это выгодно!</span>
+                <p>Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+        </footer>
+        <section class="modal-login">
+            <h2>Напишите нам</h2>
+            <!-- Здесь будет форма -->
+            <button class="modal-close">X</button>
+        </section>
+    </body>
 </html>
