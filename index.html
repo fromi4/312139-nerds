@@ -17,7 +17,7 @@
                     <li class="site-navigation-item"><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
                 </ul>
                 <ul class="basket-navigation">
-                    <li class="basket-link"><a href="basket.html">Корзина</a></li>
+                    <li><a class="basket-link" href="basket.html">Корзина</a></li>
                 </ul>
             </nav>
         </header>
@@ -46,6 +46,42 @@
                     </li>
                 </ul>
             </section>
+            <section class="map">
+                <h2 class="visually-hidden">Наши контакты</h2>
+                <p>
+                    <img src="img/contacts.png" width="1440" height="416" alt="Офис компании по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+                </p>
+                <div class="map-contacts">
+                    <p class="map-contacts-title">NЁRDS DESIGNS STUDIO</p>
+                    <p>191186, Санкт-Петербург,<br>
+                        ул. Б. Конюшенная, д. 19/8</p>
+                    <p>тел. +7 (812) 275-75-75</p>
+                    <p class="map-contacts-letter">
+                        <a class="button" href="#">НАПИШИТЕ НАМ</a>
+                    </p>
+                </div>
+            </section>
+            <section class="modal-letter">
+                <h2>Напишите нам</h2>
+                <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
+                    <p class="letter-item">
+                        <label for="letter-name">Ваше имя:</label>
+                        <input id="letter-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+                    </p>
+                    <p class="letter-item">
+                        <label for="letter-email">Ваш e-mail:</label>
+                        <input id="letter-email" type="text" name="email" value="" placeholder="email@example.com">
+                    </p>
+                    <p class="letter-item">
+                        <label for="letter-text">Текст письма:</label>
+                        <input id="letter-text" type="text" name="freetext" value="" placeholder="В свободной форме">
+                    </p>
+                    <p>
+                        <button class="button" type="submit">Отправить</button>
+                    </p>
+                </form>
+                <button class="modal-close" type="button">X</button>
+            </section>
         </main>
         <footer class="main-footer">
             <ul class="footer-social">
@@ -58,10 +94,5 @@
                 Скидка 10% для друзей из социальных сетей.
             </p>
         </footer>
-        <section class="modal-login">
-            <h2>Напишите нам</h2>
-            <!-- Здесь будет форма -->
-            <button class="modal-close">X</button>
-        </section>
-    </body>
+            </body>
 </html>

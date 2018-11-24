@@ -17,7 +17,7 @@
                     <li class="site-navigation-item"><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
                 </ul>
                 <ul class="basket-navigation">
-                    <li class="basket-link"><a href="basket.html">Корзина</a></li>
+                    <li><a class="basket-link" href="basket.html">Корзина</a></li>
                 </ul>
             </nav>
         </header>
@@ -25,7 +25,52 @@
             <h1 class="page-title">Магазин готовых шаблонов</h1>
             <section class="filters">
                 <h2 class="visually-hidden">Фильтр шаблонов</h2>
-                <!--Здесь будет форма -->
+                <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                    <fieldset>
+                        <legend>СЕТКА:</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+                                <label for="filter-adaptive">Адаптивная</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fixed" id="filter-fixed">
+                                <label for="filter-fixed">Фиксированная</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
+                                <label for="filter-rubber">Резиновая</label>
+
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>ОСОБЕННОСТИ:</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                                <label for="filter-slider">Слайдер</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantage-block" id="filter-advantage-block">
+                                <label for="filter-advantage-block">Блок преимуществ</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                                <label for="filter-news">Новости</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                                <label for="filter-gallery">Галерея</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
+                                <label for="filter-basket">Корзина</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button type="submit" class="filter-button button">Показать</button>
+                </form>
             </section>
             <section class="catalog">
                 <h2 class="visually-hidden">Список готовых шаблонов</h2>
@@ -121,6 +166,42 @@
                     <li class="pagination-item"><a href="#">3</a></li>
                     <li class="pagination-item"><a href="#">СЛЕДУЮЩАЯ</a></li>
                 </ul>
+            </section>
+            <section class="map">
+                <h2 class="visually-hidden">Наши контакты</h2>
+                <p>
+                    <img src="img/contacts.png" width="1440" height="416" alt="Офис компании по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+                </p>
+                <div class="map-contacts">
+                    <p class="map-contacts-title">NЁRDS DESIGNS STUDIO</p>
+                    <p>191186, Санкт-Петербург,<br>
+                        ул. Б. Конюшенная, д. 19/8</p>
+                    <p>тел. +7 (812) 275-75-75</p>
+                    <p class="map-contacts-letter">
+                        <a class="button" href="#">НАПИШИТЕ НАМ</a>
+                    </p>
+                </div>
+            </section>
+            <section class="modal-letter">
+                <h2>Напишите нам</h2>
+                <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
+                    <p class="letter-item">
+                        <label for="letter-name">Ваше имя:</label>
+                        <input id="letter-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+                    </p>
+                    <p class="letter-item">
+                        <label for="letter-email">Ваш e-mail:</label>
+                        <input id="letter-email" type="text" name="email" value="" placeholder="email@example.com">
+                    </p>
+                    <p class="letter-item">
+                        <label for="letter-text">Текст письма:</label>
+                        <input id="letter-text" type="text" name="freetext" value="" placeholder="В свободной форме">
+                    </p>
+                    <p>
+                        <button class="button" type="submit">Отправить</button>
+                    </p>
+                </form>
+                <button class="modal-close" type="button">X</button>
             </section>
         </main>
         <footer class="main-footer">
