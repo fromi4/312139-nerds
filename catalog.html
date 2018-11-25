@@ -27,6 +27,17 @@
                 <h2 class="visually-hidden">Фильтр шаблонов</h2>
                 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                     <fieldset>
+                        <legend>СТОИМОСТЬ</legend>
+                        <p>
+                            <label for="filter-min-price">от</label>
+                            <input class="filter-price" id="filter-min-price" type="text" name="minprice" value="" placeholder="0">
+                        </p>
+                        <p>
+                            <label for="filter-max-price">до</label>
+                            <input class="filter-price" id="filter-max-price" type="text" name="maxprice" value="" placeholder="0">
+                        </p>
+                    </fieldset>
+                    <fieldset>
                         <legend>СЕТКА:</legend>
                         <ul>
                             <li class="filter-option">
@@ -40,7 +51,6 @@
                             <li class="filter-option">
                                 <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
                                 <label for="filter-rubber">Резиновая</label>
-
                             </li>
                         </ul>
                     </fieldset>
@@ -70,6 +80,18 @@
                         </ul>
                     </fieldset>
                     <button type="submit" class="filter-button button">Показать</button>
+                </form>
+            </section>
+            <section class="sorting">
+                <h2 class="visually-hidden">Сортировка шаблонов</h2>
+                <form class="sort-item" method="get" action="https://echo.htmlacademy.ru">
+                    <button class="button-sort-item" type="button">по цене</button>
+                    <button class="button-sort-item" type="button">по типу</button>
+                    <button class="button-sort-item" type="button">по названию</button>
+                </form>
+                <form class="sort-type" method="get" action="https://echo.htmlacademy.ru">
+                    <button class="button-sort-type" type="button">+</button>
+                    <button class="button-sort-type" type="button">-</button>
                 </form>
             </section>
             <section class="catalog">
