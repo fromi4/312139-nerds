@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #283136;
+
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-header {
+    font-weight: 500;
+    color: #000000;
+    background-color: #eeeeee;
+}
+
+.main-navigation {
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+    opacity: 0.8;
+}
+
+.main-header-logo:active {
+    opacity: 0.3;
+}
+
+.site-navigation,
+.basket-navigation {
+    list-style: none;
+}
+
+.site-navigation a,
+.basket-navigation a {
+    color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.basket-navigation a:hover,
+.basket-navigation a:focus {
+    color: #fb565a;
+}
+
+.site-navigation a:active,
+.basket-navigation a:active {
+    color: #000000;
+    opacity: 0.3;
+}
+
+h1 {
+    font-size: 55px;
+    text-align: center;
+    line-height: 55px;
+}
+
+.services-list {
+    list-style: none;
+}
+
+.service-item {
+    text-align: left;
+}
+.service-item h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.button {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+}
+
+.button-web {
+    background-color: #fb565a;
+}
+
+.button-web:hover,
+.button-web:focus {
+    background-color: #e74246;
+}
+
+.button-web:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #d7373b;
+}
+
+.button-applications {
+    background-color: #00ca74;
+}
+
+.button-applications:hover,
+.button-applications:focus {
+    background-color: #00bc6c;
+}
+
+.button-applications:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #00aa62;
+}
+
+.button-presentations {
+    background-color: #efc84a;
+}
+
+.button-presentations:hover,
+.button-presentations:focus {
+    background-color: #eab534;
+}
+
+.button-presentations:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #e5a722;
+}
+
+.footer-text {
+    line-height: 22px;
+    color: #444444;
+
+}
+.social-slogan {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.footer-social {
+    list-style: none;
+}
+
+.social-button {
+    color: #ffffff;
+    background-color: #e1e1e1;
+}
+
+.social-button:hover,
+.social-button:focus {
+    background-color: #e74246;
+}
+
+.social-button:active {
+    color: #e37376;
+    background-color: #d7373b;
+}
