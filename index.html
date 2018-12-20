@@ -24,52 +24,37 @@
                 </ul>
             </nav>
             <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
-            <!-- <section class="features container">
-                <h2 class="visually-hidden">Преимущества</h2>
-                <ul class="features-list">
-                    <li class="feature-item1">
-                        <h3 class="feature-title">Долго, дорого,<br>
-                            скрупулезно.</h3>
-                        <p>Математически выверенный дизайн<br>
-                            для вашего сайта или мобильного приложения.</p>
-                        <a class="feature-button" href="#">Узнать больше</a>
-                    </li>
-                    <li class="feature-item2">
-                        <h3 class="feature-title">Любим математику<br>
-                            как никто другой</h3>
-                        <p>Никакого креатива, только математические формулы<br>
-                            для расчета идеальных пропорций.</p>
-                        <a class="feature-button" href="#">Узнать больше</a>
-                    </li>
-                    <li class="feature-item3">
-                        <h3 class="feature-title">Только ночь,<br>
-                            только хардкор</h3>
-                        <p>Работать днем, как все? Мы против этого.<br>
-                            Ближе к полуночи работа только начинается.</p>
-                        <a class="feature-button" href="#">Узнать больше</a>
-                    </li>
-                </ul>
-                <ul class="slides-switches">
-                     <li class="slide-radio">
-                         <button class="slide-btn">
-                             Первый слайд
-                         </button>
-                     </li>
-                     <li class="slide-radio">
-                         <button class="slide-btn">
-                             Второй слайд
-                         </button>
-                     </li>
-                     <li class="slide-radio">
-                         <button class="slide-btn">
-                             Третий слайд
-                         </button>
-                     </li>
-                </ul>
-            </section> -->
         </header>
-        <main class="container">
-            <section class="services">
+        <main>
+            <section class="slider">
+                <div class="container">
+                    <h2 class="visually-hidden">Преимущества</h2>
+                    <div class="slider-controls">
+                        <i class="active"></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <ul class="slider-list">
+                        <li class="slider-item">
+                            <h3>Долго, дорого,<br>скрупулезно.</h3>
+                            <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+                            <a class="slider-item-button button" href="#">Узнать больше</a>
+                        </li>
+                        <li class="slider-item">
+                            <h3>Любим математику<br>как никто другой</h3>
+                            <p>Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
+                            <a class="slider-item-button button" href="#">Узнать больше</a>
+                        </li>
+                        <li class="slider-item">
+                            <h3>Только ночь,<br>только хардкор</h3>
+                            <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
+                            <a class="slider-item-button button" href="#">Узнать больше</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+            <section class="services container">
                 <h2 class="visually-hidden">Услуги</h2>
                 <ul class="services-list">
                     <li class="service-item">
@@ -92,18 +77,20 @@
                     </li>
                 </ul>
             </section>
-            <!-- <section class="studio">
+            <section class="studio container">
                 <h2 class="visually-hidden">Описание студии</h2>
-                <p class="studio-slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-                <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-                    превыше креатива. Работаем не покладая рук, как роботы.</p>
-                <p><b>Выполняем заказы на разработку:</b></p>
-                <ul>
-                    <li class="orders">Веб-сайтов любой сложности</li>
-                    <li class="orders">Мобильных приложений для iOS и Android</li>
-                    <li class="orders">Слайдшоу и видео для корпоративных презентаций</li>
-                </ul>
-                <div class="conditions">
+                <div class="studio-description">
+                    <p class="studio-slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+                    <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+                        превыше креатива. Работаем не покладая рук, как роботы.</p>
+                    <p><b>Выполняем заказы на разработку:</b></p>
+                    <ul class="orders-list">
+                        <li class="orders-item">Веб-сайтов любой сложности</li>
+                        <li class="orders-item">Мобильных приложений для iOS и Android</li>
+                        <li class="orders-item">Слайдшоу и видео для корпоративных презентаций</li>
+                    </ul>
+                </div>
+                <div class="studio-conditions">
                     <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип дизайн-студии «Нёрдс»">
                     <p><b>с 2004 года любим точность во всем:</b></p>
                     <ul class="conditions-list">
@@ -122,25 +109,25 @@
                     </ul>
                 </div>
             </section>
-            <section class="partners">
+            <section class="partners container">
                 <h2 class="visually-hidden">Наши партнёры</h2>
                 <ul class="partners-list">
-                    <li class="partner-list">
+                    <li class="partner-item">
                         <a class="partner-logo" href="https://htmlacademy.ru/intensive/htmlcss">
                             <img src="img/logo-1.png" width="199" height="68" alt="Логотип компании HTML Academy">
                         </a>
                     </li>
-                    <li class="partner-list">
+                    <li class="partner-item">
                         <a class="partner-logo" href="#">
                             <img src="img/logo-2.png" width="209" height="90" alt="Логотип компании Барбершоп Бородинский">
                         </a>
                     </li>
-                    <li class="partner-list">
+                    <li class="partner-item">
                         <a class="partner-logo" href="#">
                             <img src="img/logo-3.png" width="185" height="52" alt="Логотип компании PINK APP">
                         </a>
                     </li>
-                    <li class="partner-list">
+                    <li class="partner-item">
                         <a class="partner-logo" href="#">
                             <img src="img/logo-4.png" width="173" height="84" alt="Логотип компании MISHKA">
                         </a>
@@ -153,15 +140,15 @@
                     <img src="img/contacts.png" width="1440" height="416" alt="Офис компании по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
                 </p>
                 <div class="map-contacts">
-                    <p class="map-contacts-title">NЁRDS DESIGNS STUDIO</p>
+                    <p class="map-contacts-title">NЁRDS DESIGN STUDIO</p>
                     <p>191186, Санкт-Петербург,<br>
                         ул. Б. Конюшенная, д. 19/8</p>
                     <p>тел. +7 (812) 275-75-75</p>
                     <p class="map-contacts-letter">
-                        <a class="button" href="#">НАПИШИТЕ НАМ</a>
+                        <a class="button map-button" href="#">НАПИШИТЕ НАМ</a>
                     </p>
                 </div>
-            </section> -->
+            </section>
         </main>
         <footer class="main-footer">
             <div class="container">
@@ -208,7 +195,6 @@
                 </div>
             </div>
         </footer>
-
         <section class="modal-letter">
             <h2>Напишите нам</h2>
             <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
@@ -226,15 +212,7 @@
                 </p>
                 <button class="button" type="submit">Отправить</button>
             </form>
-            <button class="modal-close" type="button">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                	 width="21px" height="21px" viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve">
-                <path fill="#FB565A" d="M13.328,10.5l7.371-7.371c0.389-0.389,0.389-1.025,0-1.414l-1.414-1.415c-0.389-0.389-1.025-0.389-1.414,0
-                	L10.5,7.672L3.129,0.301c-0.389-0.389-1.025-0.389-1.414,0L0.301,1.715c-0.389,0.389-0.389,1.025,0,1.414L7.672,10.5l-7.371,7.371
-                	c-0.389,0.389-0.389,1.025,0,1.414l1.415,1.414c0.389,0.389,1.025,0.389,1.414,0l7.371-7.371l7.371,7.371
-                	c0.389,0.389,1.025,0.389,1.414,0l1.414-1.414c0.389-0.389,0.389-1.025,0-1.414L13.328,10.5z"/>
-                </svg>
-            </button>
+            <button class="modal-close" type="button">Закрыть</button>
         </section>
     </body>
 </html>

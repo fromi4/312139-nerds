@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <title>Шаблоны дизайн-студии "Нёрдс"</title>
+        <title>Магазин дизайн-студии "Нёрдс"</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
@@ -14,10 +14,10 @@
                     <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
                 </a>
                 <ul class="site-navigation">
-                    <li class="site-navigation-item"><a class="site-navigation-link" href="studio.html">Студия</a></li>
-                    <li class="site-navigation-item"><a class="site-navigation-link" href="clients.html">Клиенты</a></li>
-                    <li class="site-navigation-current"><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
-                    <li class="site-navigation-item"><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
+                    <li class="site-navigation-item"><a class="site-navigation-link" href="#">Студия</a></li>
+                    <li class="site-navigation-item"><a class="site-navigation-link" href="#">Клиенты</a></li>
+                    <li class="site-navigation-current"><a class="site-navigation-link">Магазин</a></li>
+                    <li class="site-navigation-item"><a class="site-navigation-link" href="#">Контакты</a></li>
                 </ul>
                 <ul class="basket-navigation">
                     <li class="basket-navigation-item"><a class="basket-link" href="#">Корзина</a></li>
@@ -25,29 +25,8 @@
             </nav>
             <h1 class="page-title">Магазин готовых шаблонов</h1>
         </header>
-
-        <main class="container">
-            <!-- <section class="sorting">
-                <h2 class="visually-hidden">Сортировка шаблонов</h2>
-                <p><b>СОРТИРОВАТЬ:</b></p>
-                <ul class="sorting-list">
-                    <li class="sorting-item">
-                        <a class="sorting-button sorting-price" href="#">по цене</a>
-                    </li>
-                    <li class="sorting-item">
-                        <a class="sorting-button sorting-type" href="#">по типу</a>
-                    </li>
-                    <li class="sorting-item">
-                        <a class="sorting-button sorting-name" href="#">по названию</a>
-                    </li>
-                </ul>
-                <div class="sorting-control">
-                    <a class="sorting-up" href="#">up</a>
-                    <a class="sorting-down" href="#">down</a>
-                </div>
-            </section> -->
-
-            <div class="catalog-columns">
+        <main class="">
+            <div class="catalog-columns container">
                 <section class="filters">
                     <h2 class="visually-hidden">Фильтр шаблонов</h2>
                     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -64,12 +43,11 @@
                                  <div class="price-controls">
                                      <label class="min-price" for="min-price">от<input class="filter-price" id="min-price" type="text" name="minprice" value="0" placeholder="0"></label>
                                      <label class="max-price" for="max-price">до<input class="filter-price" id="max-price" type="text" name="maxprice" value="15000" placeholder="0"></label>
-
                                  </div>
                             </div>
                         </fieldset>
                         <fieldset class="filter-item">
-                            <legend>СЕТКА:</legend>
+                            <legend>Сетка:</legend>
                             <ul>
                                 <li class="filter-option">
                                     <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
@@ -86,7 +64,7 @@
                             </ul>
                         </fieldset>
                         <fieldset class="filter-item">
-                            <legend>ОСОБЕННОСТИ:</legend>
+                            <legend>Особенности:</legend>
                             <ul>
                                 <li class="filter-option">
                                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
@@ -115,6 +93,25 @@
                 </section>
                 <section class="catalog">
                     <h2 class="visually-hidden">Список готовых шаблонов</h2>
+                    <div class="sorting">
+                        <h3 class="visually-hidden">Сортировка шаблонов</h3>
+                        <p><b>СОРТИРОВАТЬ:</b></p>
+                        <ul class="sorting-list">
+                            <li class="sorting-item">
+                                <a class="sorting-button sorting-price" href="#">по цене</a>
+                            </li>
+                            <li class="sorting-item">
+                                <a class="sorting-button sorting-type" href="#">по типу</a>
+                            </li>
+                            <li class="sorting-item">
+                                <a class="sorting-button sorting-name" href="#">по названию</a>
+                            </li>
+                        </ul>
+                        <div class="sorting-control">
+                            <a class="sorting-up" href="#">up</a>
+                            <a class="sorting-down" href="#">down</a>
+                        </div>
+                    </div>
                     <ul class="catalog-list">
                         <li class="catalog-item">
                             <p class="catalog-item-image">
@@ -221,21 +218,21 @@
                     </ul>
                 </section>
         </div>
-            <!-- <section class="map">
-                <h2 class="visually-hidden">Наши контакты</h2>
-                <p>
-                    <img src="img/contacts.png" width="1440" height="416" alt="Офис компании по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        <section class="map">
+            <h2 class="visually-hidden">Наши контакты</h2>
+            <p>
+                <img src="img/contacts.png" width="1440" height="416" alt="Офис компании по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+            </p>
+            <div class="map-contacts">
+                <p class="map-contacts-title">NЁRDS DESIGN STUDIO</p>
+                <p>191186, Санкт-Петербург,<br>
+                    ул. Б. Конюшенная, д. 19/8</p>
+                <p>тел. +7 (812) 275-75-75</p>
+                <p class="map-contacts-letter">
+                    <a class="button map-button" href="#">НАПИШИТЕ НАМ</a>
                 </p>
-                <div class="map-contacts">
-                    <p class="map-contacts-title">NЁRDS DESIGNS STUDIO</p>
-                    <p>191186, Санкт-Петербург,<br>
-                        ул. Б. Конюшенная, д. 19/8</p>
-                    <p>тел. +7 (812) 275-75-75</p>
-                    <p class="map-contacts-letter">
-                        <a class="button" href="#">НАПИШИТЕ НАМ</a>
-                    </p>
-                </div>
-            </section> -->
+            </div>
+        </section>
         </main>
         <footer class="main-footer">
             <div class="container">
@@ -278,7 +275,7 @@
                 </ul>
                 <div class="footer-text">
                     <p class="social-slogan">Давайте дружить, это выгодно!</p>
-                    <p class="hz">Скидка 10% для друзей из социальных сетей.</p>
+                    <p>Скидка 10% для друзей из социальных сетей.</p>
                 </div>
             </div>
         </footer>
@@ -299,15 +296,7 @@
                 </p>
                 <button class="button" type="submit">Отправить</button>
             </form>
-            <button class="modal-close" type="button">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                	 width="21px" height="21px" viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve">
-                <path fill="#FB565A" d="M13.328,10.5l7.371-7.371c0.389-0.389,0.389-1.025,0-1.414l-1.414-1.415c-0.389-0.389-1.025-0.389-1.414,0
-                	L10.5,7.672L3.129,0.301c-0.389-0.389-1.025-0.389-1.414,0L0.301,1.715c-0.389,0.389-0.389,1.025,0,1.414L7.672,10.5l-7.371,7.371
-                	c-0.389,0.389-0.389,1.025,0,1.414l1.415,1.414c0.389,0.389,1.025,0.389,1.414,0l7.371-7.371l7.371,7.371
-                	c0.389,0.389,1.025,0.389,1.414,0l1.414-1.414c0.389-0.389,0.389-1.025,0-1.414L13.328,10.5z"/>
-                </svg>
-            </button>
+            <button class="modal-close" type="button">Закрыть</button>
         </section>
     </body>
 </html>
