@@ -1,9 +1,3 @@
-html,
-body {
-    min-width: 1440px;
-    min-height: 2476px;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -120,6 +114,7 @@ input[type="radio"].visually-hidden {
 .site-navigation a,
 .basket-navigation a {
     display: block;
+
     color: #000000;
 }
 
@@ -205,6 +200,8 @@ input[type="radio"].visually-hidden {
     width: 18px;
     height: 18px;
     padding: 8px;
+
+    vertical-align: middle;
 
     border-radius: 50%;
     cursor: pointer;
@@ -385,6 +382,7 @@ input[type="radio"].visually-hidden {
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
+    vertical-align: middle;
     text-decoration: none;
     color: #ffffff;
 
@@ -469,7 +467,7 @@ input[type="radio"].visually-hidden {
 .studio-slogan {
     font-size: 45px;
     line-height: 45px;
-    font-weight: 500;
+    font-weight: 700;
     color: #000000;
 }
 
@@ -534,15 +532,17 @@ input[type="radio"].visually-hidden {
     /* outline: 1px solid red; */
 }
 
-.studio-conditions img + p {
+.studio-conditions p {
+    padding: 0;
+    margin: 0;
+
     text-transform: uppercase;
     text-align: center;
 }
 
-.studio-conditions p {
-    padding: 0;
-    margin: 0;
-    /* outline: 1px solid black; */
+.conditions-item p {
+    text-transform: none;
+    text-align: left;
 }
 
 .conditions-list {
@@ -783,6 +783,7 @@ input[type="radio"].visually-hidden {
     width: 50%;
 
     font-size: 16px;
+    vertical-align: middle;
     text-transform: uppercase;
 }
 
@@ -1241,6 +1242,7 @@ li:nth-child(6) .catalog-item-description {
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
+    vertical-align: middle;
     text-transform: uppercase;
 
     color: #000000;
@@ -1455,13 +1457,53 @@ li:nth-child(6) .catalog-item-description {
     margin-top: 10px;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal-letter {
     position: fixed;
-    top: 120px;
+    bottom: 120px;
     left: 50%;
-    z-index: 3;
+    z-index: 101;
 
-    /* display: none; */
+    display: none;
 
     width: 760px;
 
@@ -1476,6 +1518,16 @@ li:nth-child(6) .catalog-item-description {
     /* Временно для сетки */
     /* outline: 1px solid black; */
     /* margin: 0 auto; */
+}
+
+.modal-show {
+    display: block;
+
+    animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-letter h2 {
@@ -1517,11 +1569,13 @@ li:nth-child(6) .catalog-item-description {
 
 .appointment-item label {
     display: block;
+
+    margin-bottom: 10px;
+
     font-size: 16px;
     line-height: 18px;
     font-weight: 700;
     color: #000000;
-    margin-bottom: 10px;
 }
 
 .appointment-item input {
