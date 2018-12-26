@@ -5,7 +5,7 @@
         <title>Магазин дизайн-студии "Нёрдс"</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet">
     </head>
     <body class="inner-page">
         <header class="main-header">
@@ -25,7 +25,7 @@
             </nav>
             <h1 class="page-title">Магазин готовых шаблонов</h1>
         </header>
-        <main class="">
+        <main>
             <div class="catalog-columns container">
                 <section class="filters">
                     <h2 class="visually-hidden">Фильтр шаблонов</h2>
@@ -220,11 +220,9 @@
         </div>
         <section class="map">
             <h2 class="visually-hidden">Наши контакты</h2>
-            <p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840.3091506435924!2d30.322763610261198!3d59.938725537286736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1545674942368" width="1440" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-                <!-- <img src="img/contacts.png" width="1440" height="416" alt="Офис компании по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"> -->
-            </p>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840.3091506435924!2d30.322763610261198!3d59.938725537286736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1545674942368" width="1440" height="416" style="border:0" allowfullscreen class="iframe-map"></iframe>
+            </div>
             <div class="map-contacts">
                 <p class="map-contacts-title">NЁRDS DESIGN STUDIO</p>
                 <p>191186, Санкт-Петербург,<br>
@@ -284,24 +282,25 @@
         <section class="modal-letter">
             <h2>Напишите нам</h2>
             <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
-                <p class="appointment-item">
+                <div class="appointment-item">
                     <label for="letter-name">Ваше имя:</label>
-                    <input class="letter-form-name" id="letter-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-                </p>
-                <p class="appointment-item">
+                    <input id="letter-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+                </div>
+                <div class="appointment-item">
                     <label for="letter-email">Ваш e-mail:</label>
-                    <input class="letter-form-email" id="letter-email" type="text" name="email" value="" placeholder="email@example.com">
-                </p>
-                <p class="appointment-item appointment-item-text">
+                    <input id="letter-email" type="email" name="email" value="" placeholder="email@example.com">
+                </div>
+                <div class="appointment-item appointment-item-text">
                     <label for="letter-text">Текст письма:</label>
-                    <input class="letter-form-text" id="letter-text" type="text" name="freetext" value="" placeholder="В свободной форме">
-                </p>
+                    <textarea name="freetext" rows="5" cols="90" id="letter-text" placeholder="В свободной форме">
+                    </textarea>
+                </div>
                 <button class="button" type="submit">Отправить</button>
             </form>
             <button class="modal-close" type="button">Закрыть</button>
         </section>
 
-        <script src="js/popup.js"></script>
+        <script src="js/scripts.min.js"></script>
 
     </body>
 </html>
