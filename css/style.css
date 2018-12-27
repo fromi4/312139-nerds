@@ -5,7 +5,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    font-family: "Roboto", "Arial", "sans-serif";
+    font-family: "Roboto", "Arial", sans-serif;
     color: #283136;
 
     background-color: #ffffff;
@@ -465,6 +465,10 @@ input[type="radio"].visually-hidden {
     color: #000000;
 }
 
+.studio-slogan sup {
+    font-size: 65%;
+}
+
 .studio-description .studio-slogan {
     margin: 0;
     margin-bottom: 31px;
@@ -545,21 +549,21 @@ input[type="radio"].visually-hidden {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: 0;
-    margin-top: 39px;
+    margin-top: 40px;
     padding: 0;
 
     list-style: none;
 }
 
 .conditions-item {
-    width: 120px;
+    width: 119px;
     padding: 0;
 
     text-align: left;
 }
 
 .conditions-item p:nth-child(2) {
-    margin-top: 21px;
+    margin-top: 20px;
 
     font-size: 16px;
     line-height: 18px;
@@ -1147,7 +1151,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-block h3 {
     margin: 0;
-    margin-top: 29px;
+    margin-top: 25px;
     padding: 0;
 }
 
@@ -1161,7 +1165,7 @@ input[type="radio"].visually-hidden {
 .catalog-item-description {
     width: 180px;
     margin: 0;
-    margin-top: 19px;
+    margin-top: 15px;
 
     line-height: 18px;
     color: #666666;
@@ -1188,6 +1192,8 @@ li:nth-child(6) .catalog-item-description {
 
 .button-catalog {
     background-color: #fb565a;
+    padding: 17px 60px 15px 60px;
+
 }
 
 .button-catalog:hover,
